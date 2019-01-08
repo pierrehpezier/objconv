@@ -476,7 +476,7 @@ struct SARelocation {
 
 // Structure for indicating where a function begins and ends
 struct SFunctionRecord {
-   int32  Section;                               // Section containing function
+   uint32  Section;                               // Section containing function
    uint32 Start;                                 // Offset of function start
    uint32 End;                                   // Offset of function end
    uint32 Scope;                                 // Scope of function. 0 = inaccessible, 1 = function local, 2 = file local, 4 = public, 8 = weak public, 0x10 = communal, 0x20 = external
